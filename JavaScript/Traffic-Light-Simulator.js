@@ -43,7 +43,7 @@ function runSequence(config, cycles) {
             console.log("Invalid phase detected");
           } else {
             console.log(
-              `Switching to ${config["phases"][i]["color"]} for ${config["phases"][i]["duration"]}s`,
+              `Switching to ${config["phases"][i]["color"]} for ${config["phases"][i]["duration"]} s`,
             );
           }
         }
@@ -69,7 +69,3 @@ function generateTimeline(config, cycles) {
 
   return timelineArray;
 }
-
-console.log(generateTimeline(config1, 2));
-console.log(runSequence(config1, 2));
-
